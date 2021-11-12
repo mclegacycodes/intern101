@@ -1,7 +1,7 @@
 {
   "name": "intern101",
   "version": "1.0.0",
-  "description": "This is our internship project application at UCC",
+  "description": "This is our internship project application at University of Cape Coast",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

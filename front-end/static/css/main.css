@@ -1,0 +1,58 @@
+
+
+.nav-bg{
+  background-color: #2e3192;
+}
+
+.height{
+  min-height: 100vh;
+}
+.border{
+  border-radius: 5px;
+}
+
+.btn-light{
+  width:100px !important;
+}
+.text-blue{
+  color:#2e3192;
+  font-weight: bold;
+}
+
+#kickstart{
+  font-size: 20px;
+}
+.btn-blue{
+  background-color:#2e3192;
+}
+
+.title-underline{
+  width:200px;
+  height:4px;
+}
+
+.bg-step1{
+  border-radius: 5px;
+  background-color: #f0e629;
+  
+}
+
+.bg-step2{
+  border-radius: 5px;
+  background-color: #2e3192;
+ 
+}
+
+.bg-step3{
+  border-radius: 5px;
+  background-color: #409602;
+  
+}
+
+.carousel-bg-blue{
+  background-color: #2e3192;
+}
+
+.text-shift{
+  text-align: right;
+}
