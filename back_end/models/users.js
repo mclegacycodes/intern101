@@ -11,6 +11,7 @@ const UserSchema = new mongoose.Schema({
  password:{required: true, type:String,trim: true},
  role: {type:String, default:'student'},
  skill:[{type:String, default:''}],
+ 
  department:{
      type:mongoose.Schema.Types.ObjectId,
      ref:'Department'
