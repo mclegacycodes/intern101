@@ -118,7 +118,7 @@ class Homepage extends Component {
                                             <img src="static/images/student2.png" className={`w-50 d-block`} />
                                         </div>
                                         <div className={`carousel-item`}>
-                                            <img src="static/images/student3.jpg" className={`w-50 d-block`} />
+                                            <img src="static/images/student5.png" className={`w-50 d-block`} />
                                         </div>
                                     </div>
                                     {/* end of images */}
