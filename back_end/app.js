@@ -8,6 +8,7 @@ require('dotenv').config()
 
 const departments = require('./routes/departments')
 const users = require('./routes/users')
+const applications = require('./routes/applications')
 
 //middlewares
 app.use(express.json())
@@ -16,6 +17,7 @@ app.use(express.json())
 //routes
 app.use('/departments',departments)
 app.use('/users',users)
+app.use('/applications',applications)
 
 const start = async ()=>{
     try {
