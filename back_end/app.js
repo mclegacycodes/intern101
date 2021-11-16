@@ -6,14 +6,16 @@ const connectionDB = require('./db/connection')
 require('dotenv').config()
 
 
-const department = require('./routes/departments')
+const departments = require('./routes/departments')
+const users = require('./routes/users')
 
 //middlewares
 app.use(express.json())
 
 
 //routes
-app.use('/departments',department)
+app.use('/departments',departments)
+app.use('/users',users)
 
 const start = async ()=>{
     try {
