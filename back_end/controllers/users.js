@@ -4,24 +4,24 @@ const User = require('../models/users')
 
 const getAllUsers = async(req,res)=>{
    try {
-    const department = await Department.find({})
-    res.status(201).json({department}) 
+    const user = await User.find({})
+    res.status(201).json({user}) 
    } catch (error) {
     res.status(501).json({msg: error})
    }
 }
 
 
-const getSingleDepartment =async (req,res)=>{
+const getSingleUser =async (req,res)=>{
     try {
-        const {id:departmentId}=  req.params
-        const department = await Department.findOne({_id: departmentId})      
+        const {id:userId}=  req.params
+        const user = await User.findOne({_id: userId}).populate('department')      
         
         //check if the return message is null
-        if(!department){
-            return res.status(404).json({msg: `no task found with the id: ${departmentId}`})  
+        if(!user){
+            return res.status(404).json({msg: `no task found with the id: ${userId}`})  
         }
-        res.status(201).json({department})
+        res.status(201).json({user})
     } catch (error) {
         res.status(501).json({msg: error})
     }
@@ -29,10 +29,10 @@ const getSingleDepartment =async (req,res)=>{
 }
 
 
-const createDepartment = async(req,res)=>{
+const createUser = async(req,res)=>{
     try {
-        const department = await Department.create(req.body)
-        res.status(201).json({department})   
+        const user = await User.create(req.body)
+        res.status(201).json({user})   
     } catch (error) {
       res.status(501).json({msg: error})  
     }
@@ -40,32 +40,32 @@ const createDepartment = async(req,res)=>{
 }
 
 
-const updateDepartment = async(req,res)=>{
+const updateUser = async(req,res)=>{
     try {
-        const {id:departmentId}=  req.params
-        const department = await Department.findOneAndUpdate({_id: departmentId},req.body,{ new: true, runValidators: true})      
+        const {id:userId}=  req.params
+        const user = await User.findOneAndUpdate({_id:userId},req.body,{ new: true, runValidators: true})      
         
         //check if the return message is null
-        if(!department){
-            return res.status(404).json({msg: `no task found with the id: ${departmentId}`})  
+        if(!user){
+            return res.status(404).json({msg: `no task found with the id: ${userId}`})  
         }
-        res.status(201).json({department})
+        res.status(201).json({user})
     } catch (error) {
         res.status(501).json({msg: error})
     }
 }
 
 
-const deleteDepartment =async (req,res)=>{
+const deleteUser =async (req,res)=>{
     try {
-        const {id:departmentId}=  req.params
-        const department = await Department.findOneAndDelete({_id: departmentId})      
+        const {id:userId}=  req.params
+        const user = await User.findOneAndDelete({_id: userId})      
         
         //check if the return message is null
-        if(!department){
-            return res.status(404).json({msg: `no task found with the id: ${departmentId}`})  
+        if(!user){
+            return res.status(404).json({msg: `no task found with the id: ${userId}`})  
         }
-        res.status(201).json({department})
+        res.status(201).json({user})
     } catch (error) {
         res.status(501).json({msg: error})
     }
@@ -73,5 +73,5 @@ const deleteDepartment =async (req,res)=>{
 
 
 module.exports={
-    getAllDepartment,getSingleDepartment,createDepartment,updateDepartment,deleteDepartment
+    getAllUsers,getSingleUser,createUser,updateUser,deleteUser
 }
