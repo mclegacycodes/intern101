@@ -16,7 +16,7 @@ const getAllApplications = async(req,res)=>{
 const getSingleApplication =async (req,res)=>{
     try {
         const {id:applicationId}=  req.params
-        const application = await Application.findOne({_id: applicationId})     
+        const application = await Application.findOne({_id: applicationId}).populate('student','name').populate('department','name')     
         
         //check if the return message is null
         if(!application){
