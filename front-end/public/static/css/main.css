@@ -56,3 +56,40 @@
 .text-shift{
   text-align: right;
 }
+
+.bg-account{
+  background-color: #f5f5f5;
+}
+
+.firstname_input{
+  height:35px;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+}
+.lastname_input{
+  height:35px;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+}
+
+.index_label{
+   margin-right: 20.5em;
+}
+.email_label{
+  margin-right: 20.5em;
+}
+
+.password_label{
+  margin-right: 22.5em;
+}
+
+.passwordConfirm_label{
+  margin-right: 18.5em;
+}
+
+.index_input{
+  background-color: #f5f5f5;
+  width:430px;
+  border-radius: 5px;
+  height:35px;
+}
