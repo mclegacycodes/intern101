@@ -1,0 +1,54 @@
+.auth{
+    display: flex;
+    flex: 1;
+    padding: 40px 0;
+    justify-content: center;
+}
+
+.container{
+    min-width: 70%;
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 1px 1px 10px rgb(230, 230, 230);
+}
+
+.img{
+    display: flex;
+    flex:1;
+    overflow: hidden;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    align-items: center;
+    flex:1;
+}
+
+.title{
+    color: blue;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-align: center;
+    width: 100%;
+    margin-top: 25px;
+    text-transform: uppercase;
+}
+
+.submit-btn{
+    width: 80%;
+    background-color: blue;
+    padding: 10px 0;
+    font-size: 0.8rem;
+    color: white;
+    border: none;
+    font-weight: 600;
+}
+
+.link{
+    font-size: 0.6rem;
+    text-decoration: underline;
+    color: blue;
+}
