@@ -1,5 +1,4 @@
 import React, {useState} from "react";
-import students_img from './../../assets/students.png'
 import './Input.modules.css'
 
 const InputField = (props) =>{
