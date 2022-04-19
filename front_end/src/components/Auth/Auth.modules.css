@@ -26,7 +26,6 @@
     align-items: center;
     flex:1;
 }
-
 .title{
     color: blue;
     font-size: 1.2rem;
@@ -53,7 +52,21 @@
     text-decoration: underline;
     color: blue;
 }
+.link:hover{
+    cursor: pointer;
+    color: rgb(255, 115, 0);
+}
 .username{
     display: flex;
     column-gap: 10px;
+}
+p{
+    width: 80%;
+    color: rgb(129, 125, 125);
+    font-size: 0.83em;
+    margin: 30px;
+}
+.l{
+    margin-right: 60%;
+    padding: 10px;
 }
