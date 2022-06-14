@@ -1,0 +1,17 @@
+select{
+    width: 100%;
+    background-color: #efefef;
+    border: none;
+    border-radius: 3px;
+}
+.inline{
+    display: grid;
+    grid-template-columns: 45% 45%;
+    justify-content: space-between;
+    width: 80%;
+}
+.centered{
+    width: 30%;
+    border-radius: 3px;
+}
+

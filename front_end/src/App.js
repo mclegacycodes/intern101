@@ -6,16 +6,19 @@ import ResetPassword from './pages/ResetPassword/ResetPassword';
 import Mask from './components/Mask/index';
 import Congratulations from './pages/Congratulations/Congratulations';
 import ResetPasswordConfrimed from './pages/ResetPasswordConfirmed';
+import ApplicationForm from './pages/ApplicationForm/ApplicationForm';
 
 function App() {
   return (
     <div className="App">
       <Navbar/>
-      {/* <CreateAccount/> */}
+      <CreateAccount/>
       <Login/>
-      {/* <Congratulations/> */}
-      {/* <ResetPassword/> */}
-      {/* <ResetPasswordConfrimed/> */}
+      <Congratulations/>
+      <ResetPassword/>
+      <ResetPasswordConfrimed/>
+      <ApplicationForm/>
+      {/* <Mask/> */}
     </div>
   );
 }
