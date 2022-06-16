@@ -6,7 +6,7 @@ const Auth = (props) =>{
     return(
         <div className="auth">
             <div className="container">
-                <img className="img" src={students_img}/>
+                <img className="img" src={students_img} alt="students learning together"/>
                 <div className="form">
                     <h1 className="title">{props.title}</h1>
                     {

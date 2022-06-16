@@ -5,7 +5,7 @@ import submited from "../../assets/application-submitted.png"
 const Congratulations = () =>{
     return(
         <Mask title="congratulations!!!">
-                <img src={submited} width="800"  className="image"/>
+                <img src={submited}  className="image"/>
                 <p className="text">
                     Your application has been submitted pending approval.
                     Shortlisted Applicants will be notified soon.

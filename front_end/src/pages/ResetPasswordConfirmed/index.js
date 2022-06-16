@@ -2,6 +2,7 @@ import React from "react";
 import Mask from "../../components/Mask";
 import ResetSent from "../../assets/reset-password-link.png"
 import "./ResetPasswordConfirmed.modules.css"
+import {Link} from "react-router-dom";
 
 const ResetPasswordConfrimed = () =>{
     return(
@@ -11,9 +12,9 @@ const ResetPasswordConfrimed = () =>{
                      provided.Please Checkyour mail to reset password.
                 </span>
                 <img src={ResetSent} className="reset"/>
-                <button className="submit-btn">
+                <Link to="/login"><button className="submit-btn">
                     Back To Login
-                </button>
+                </button></Link>
         </Mask>
     )
 }
